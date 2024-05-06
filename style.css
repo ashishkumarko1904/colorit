@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: whitesmoke;
     overflow: hidden;
 }
 .inner{
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    overflow-y: hidden;
+   
     
 }
 .slide{
@@ -75,3 +75,69 @@ body{
     border-radius: 50%;
     background-color: black;
 }
+/*main content designs below*/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    background-color: red;
+}
+.dropdown{
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+.dropdowncontent ul{
+    margin-top: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+}
+.dropdowncontent ul li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 3rem;
+    background-color: yellow;
+}
+
+.dropdown:hover .dropdowncontent{
+    display: block;
+}
+.herosection{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*why us section*/
+.whyus{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.presentation{
+    background-color: yellow;
+}
+/*reviews section*/
+.reviews{
+   width:100vw;
+height:100vh;
+}
+/*footer*/
